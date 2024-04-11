@@ -1,38 +1,76 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-weight: 500;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #363333;
+}
+
+.walk-counter {
+  margin: 40px auto;
+  width: 500px;
+}
+
+.form {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.form-elem {
+  display: flex;
+  
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.input-description {
+  margin: 10px auto;
+  
+}
+
+.form-input,
+.add-btn {
+  width: 210px;
+  padding: 10px;
+  height: 35px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.table {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+
+td {
+  padding: 5px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+th {
+  padding: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete-btn {
+  border: none;
+  font-weight: bold;
+  background-color: white;
+  cursor: pointer;
 }
